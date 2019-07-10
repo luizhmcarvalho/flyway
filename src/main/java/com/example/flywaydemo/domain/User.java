@@ -3,6 +3,8 @@ package com.example.flywaydemo.domain;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -10,13 +12,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+	@NotBlank
     @Column(unique = true)
     @Size(min = 1, max = 100)
     private String username;
 
+    @NotBlank
     @Size(max = 50)
     private String firstName;
 
+    @NotBlank
     @Size(max = 50)
     private String lastName;
 
