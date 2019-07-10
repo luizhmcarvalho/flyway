@@ -1,6 +1,6 @@
 package com.example.flywaydemo.repository;
 
-import java.util.List;
+//import java.util.List;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.example.flywaydemo.domain.User;
