@@ -1,0 +1,9 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: flyway
+  buildpack: java_buildpack
+  path: ./target/spring-boot-starter-parent-1.5.15.RELEASE.jar
+  memory: 1024M
+  random-route: true
